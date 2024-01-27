@@ -236,9 +236,9 @@ footer{
 /* responsive */
 
 
+/* Estilos para dispositivos móviles */
 @media (max-width: 700px) {
-    
-
+    /* Ajustes para el menú desplegable */
     .menu-items {
         display: none; 
         position: absolute;
@@ -255,8 +255,9 @@ footer{
         align-items: center;
     }
 
-    .botonMenu{
+    .botonMenu {
         margin: 0 auto;
+        margin-bottom: 10px;
         display: block;
         width: 40px;
         height: 36px;
@@ -268,7 +269,7 @@ footer{
         position: relative;
     }
 
-    .botonMenu span{
+    .botonMenu span {
         display: block;
         width: 40px;
         height: 4px;
@@ -276,199 +277,132 @@ footer{
         margin-top: 7px;
     }
 
-    label{
+    label {
         cursor: pointer;
     }
 
-    #menu-toggle{
+    #menu-toggle {
         display: none;
     }
 
-    #trickMenu{
+    #trickMenu {
         display: none;
         text-align: center;
         background: white;
         padding: 10px 0;
     }
 
-
-    /* AJUSTE */
-
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    
-    header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        padding: 20px 0;
-    }
-    
-    .titulo {
-        margin-bottom: 10px;
-        font-size: 24px;
-    }
-    
-    .botonMenu {
-        margin: 0 auto;
-        margin-bottom: 10px;
-    }
-    
-    .menu-items {
-        width: 100%;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .menu-toggle-checkbox:checked + .menu-toggle-label + .menu-items {
-        display: flex;
-    }
-    
-    .menu {
-        margin: 10px 0;
-        font-size: 18px;
-    }
-    
     /* Ajustes generales para los contenedores */
     .contenedor1,
     .contenedor2,
     .contenedor3,
     .contenedor4,
     .contenedor5 {
-        margin-top: 100px; /* Espacio adicional entre secciones */
         display: flex;
         flex-direction: column;
     }
-    
+
+    /* Ajustes para el contenido del contenedor1 en dispositivos móviles */
+    .contenedor1 .grid-item1,
     .contenedor1 .grid-item2 {
+        text-align: center;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px auto; /* Ajuste de margen */
     }
-    
+
     .contenedor1 .grid-item2 img {
         align-self: center;
     }
-    
-    .contenedor1 .grid-item1 {
+
+    /* Ajustes para el contenido del contenedor2 en dispositivos móviles */
+    .contenedor2 .grid-item1,
+    .contenedor2 .grid-item2 {
         text-align: center;
-    }
-    
-    .contenedor1 .grid-item1 .color-boton {
-        margin: 10px auto; 
-    }
-    
-    .contenedor2 .grid-item2,
-    .contenedor2 .grid-item2 .color-boton {
-        text-align: center;
-        margin: 10px auto; /* Centrar el botón horizontalmente */
-    }
-    
-    .contenedor3 .galeria-item1,
-    .contenedor3 .galeria-item2 {
-        padding: 2px;
-        height: 250px; /* Ajusta el padding según tu preferencia */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px auto; /* Ajuste de margen */
     }
 
-    .contenedor4 .galeria-item2,
+    .contenedor2 .grid-item1 img {
+        width: 50%;
+        align-self: center;
+    }
+
+    /* Ajustes para la galería en dispositivos móviles */
+    .contenedor3 .galeria-item1,
+    .contenedor3 .galeria-item2,
+    .contenedor4 .galeria-item1,
     .contenedor4 .galeria-item2 {
         padding: 2px;
-        height: 250px; /* Ajusta el padding según tu preferencia */
+        height: 250px; 
     }
-    
-    
+
     .galeria2 {
-        display: block; /* Cambiar a bloque para que los elementos se muestren uno debajo del otro */
-        margin: 0 auto; /* Agregar borde para verificar la posición */
+        display: block; 
+        margin: 0 auto; 
     }
-    
+
     .galeria-item2 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 10px; /* Espacio entre cada elemento */
+        margin-bottom: 10px; 
     }
-    
-    .galeria-item2 img {
-        width: 30%; /* Establecer el ancho máximo del 30% para adaptarse al contenedor */
-        height: auto; /* Permitir que la altura se ajuste automáticamente */
-    }
-    
 
-    /* Ajustes para los títulos */
-    .titulo-cont1 {
-        font-size: 48px;
-        text-align: center;
+    .galeria-item2 img {
+        width: 30%; 
+        height: auto; 
+    }
+
+    /* Ajustes para los títulos y párrafos en dispositivos móviles */
+    .titulo,
+    .botonMenu,
+    .menu {
+        font-size: 16px; /* Reducción del tamaño de fuente */
+    }
+
+    .titulo {
+        margin-bottom: 8px; /* Reducción del espacio inferior */
     }
 
     h1 {
-        font-size: 36px;
+        font-size: 24px;
     }
 
     h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
-
-    h4 {
         font-size: 18px;
     }
 
-    /* Ajustes para los párrafos */
-    .parrafo1 {
-        font-size: 24px;
-    }
-
-    .parrafo2 {
+    h3 {
         font-size: 16px;
     }
 
-    .parrafo3 {
-        font-size: 36px;
+    h4 {
+        font-size: 14px;
     }
 
-    .parrafo4 {
-        font-size: 16px;
-    }
-
-    .parrafo5 {
-        font-size: 16px;
-    }
-
-    .parrafo6 {
-        font-size: 36px;
-    }
-
-    .parrafo7 {
-        font-size: 36px;
-    }
-
-    /* Ajustes para los botones */
+    .parrafo1,
+    .parrafo3,
+    .parrafo6,
+    .parrafo7,
     .color-boton {
-        font-size: 16px;
-        padding: 10px;
+        font-size: 14px; /* Reducción del tamaño de fuente */
     }
 
-    /* Ajustes para la galería */
-    .galeria {
-        grid-template-columns: 100%;
-        gap: 10px;
-        align-items: center;
+    .parrafo2,
+    .parrafo4,
+    .parrafo5 {
+        font-size: 12px; /* Reducción del tamaño de fuente */
     }
 
-    .galeria-item1,
-    .galeria-item2 {
-        width: 100%;
-        
-    }
-
-    /* Ajustes para el footer */
+    /* Ajustes para el footer en dispositivos móviles */
     footer {
+        margin-top: 80px;
         grid-template-columns: 100%;
         height: auto;
     }
@@ -476,14 +410,17 @@ footer{
     .cont-foo {
         margin-bottom: 20px;
     }
-
-    /* Ajustes para la barra de navegación del footer */
-    .border,
+    
+    /* Ajustes para la línea naranja en el footer en dispositivos móviles */
     .border-foo {
-        display: none;
+        display: block;
+        width: 30%;
+        height: 2px;
+        background-color: orange;
+        margin: 5px 0;
     }
-
 }
+
 
 
 
