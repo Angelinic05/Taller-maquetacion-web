@@ -203,6 +203,7 @@ h3{
     height: 2px;
     background-color: #ff702a;
 }
+
 .titulo-foo{
     text-decoration: none;
     color: #fff;
@@ -221,7 +222,7 @@ footer{
     padding: 4px;
 }
 
-.cont-foo{
+.cont-foo, .cont-foo-cent{
     display: flex;
     flex-direction: column;
 }
@@ -235,10 +236,9 @@ footer{
 
 /* responsive */
 
-
-/* Estilos para dispositivos móviles */
 @media (max-width: 700px) {
-    /* Ajustes para el menú desplegable */
+    
+
     .menu-items {
         display: none; 
         position: absolute;
@@ -255,13 +255,12 @@ footer{
         align-items: center;
     }
 
-    .botonMenu {
+    .botonMenu{
         margin: 0 auto;
-        margin-bottom: 10px;
         display: block;
         width: 40px;
         height: 36px;
-        padding: 10px;
+        padding: 5px;
         border-radius: 7px;
         background: #666;
         color: white;
@@ -269,7 +268,7 @@ footer{
         position: relative;
     }
 
-    .botonMenu span {
+    .botonMenu span{
         display: block;
         width: 40px;
         height: 4px;
@@ -277,21 +276,62 @@ footer{
         margin-top: 7px;
     }
 
-    label {
+    label{
         cursor: pointer;
     }
 
-    #menu-toggle {
+    #menu-toggle{
         display: none;
     }
 
-    #trickMenu {
+    #trickMenu{
         display: none;
         text-align: center;
         background: white;
         padding: 10px 0;
     }
 
+
+    /* AJUSTE */
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+    }
+    
+    .titulo {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    
+    .botonMenu {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .menu-items {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .menu-items {
+        display: flex;
+    }
+    
+    .menu {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    
     /* Ajustes generales para los contenedores */
     .contenedor1,
     .contenedor2,
@@ -302,105 +342,147 @@ footer{
         flex-direction: column;
     }
 
-    /* Ajustes para el contenido del contenedor1 en dispositivos móviles */
-    .contenedor1 .grid-item1,
-    .contenedor1 .grid-item2 {
+    
+    .contenedor1 .grid-item1 {
+        text-align: center;
+        margin: 10px auto; 
+    }
+    
+    .contenedor1 .grid-item2,
+    .contenedor1 .grid-item1 {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 10px auto; /* Ajuste de margen */
     }
 
     .contenedor1 .grid-item2 img {
         align-self: center;
     }
-
-    /* Ajustes para el contenido del contenedor2 en dispositivos móviles */
-    .contenedor2 .grid-item1,
-    .contenedor2 .grid-item2 {
+    
+    .contenedor2 .grid-item1 {
+        text-align: center;
+        margin: 10px auto; 
+    }
+    .contenedor2 .grid-item2,
+    .contenedor2 .grid-item1 {
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin: 10px auto; /* Ajuste de margen */
     }
-
     .contenedor2 .grid-item1 img {
         width: 50%;
         align-self: center;
     }
 
-    /* Ajustes para la galería en dispositivos móviles */
+    
+    
     .contenedor3 .galeria-item1,
-    .contenedor3 .galeria-item2,
-    .contenedor4 .galeria-item1,
-    .contenedor4 .galeria-item2 {
+    .contenedor3 .galeria-item2 {
         padding: 2px;
-        height: 250px; 
+        width: 230px;
+        height: 230px; 
     }
 
+    .contenedor4 .galeria-item2,
+    .contenedor4 .galeria-item2 {
+        padding: 2px;
+        width: 230px;
+        height: 200px; 
+    }
+    
+    
     .galeria2 {
         display: block; 
         margin: 0 auto; 
     }
-
+    
     .galeria-item2 {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 10px; 
     }
-
-    .galeria-item2 img {
+    
+    .galeria-item2 img{
         width: 30%; 
         height: auto; 
     }
+    
 
-    /* Ajustes para los títulos y párrafos en dispositivos móviles */
-    .titulo,
-    .botonMenu,
-    .menu {
-        font-size: 16px; /* Reducción del tamaño de fuente */
-    }
-
-    .titulo {
-        margin-bottom: 8px; /* Reducción del espacio inferior */
+    /* Ajustes para los títulos */
+    .titulo-cont1 {
+        font-size: 48px;
+        text-align: center;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 30px;
     }
 
     h4 {
-        font-size: 14px;
+        font-size: 18px;
     }
 
-    .parrafo1,
-    .parrafo3,
-    .parrafo6,
-    .parrafo7,
-    .color-boton {
-        font-size: 14px; /* Reducción del tamaño de fuente */
+    /* Ajustes para los párrafos */
+    .parrafo1 {
+        font-size: 24px;
     }
 
-    .parrafo2,
-    .parrafo4,
+    .parrafo2 {
+        font-size: 16px;
+    }
+
+    .parrafo3 {
+        font-size: 36px;
+    }
+
+    .parrafo4 {
+        font-size: 16px;
+    }
+
     .parrafo5 {
-        font-size: 12px; /* Reducción del tamaño de fuente */
+        font-size: 16px;
     }
 
-    /* Ajustes para el footer en dispositivos móviles */
+    .parrafo6 {
+        font-size: 36px;
+    }
+
+    .parrafo7 {
+        font-size: 36px;
+    }
+
+    /* Ajustes para los botones */
+    .color-boton {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Ajustes para la galería */
+    .galeria {
+        grid-template-columns: 100%;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .galeria-item1,
+    .galeria-item2 {
+        width: 100%;
+        
+    }
+   
     footer {
         margin-top: 80px;
         grid-template-columns: 100%;
@@ -408,19 +490,8 @@ footer{
     }
 
     .cont-foo {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
+
     
-    /* Ajustes para la línea naranja en el footer en dispositivos móviles */
-    .border-foo {
-        display: block;
-        width: 30%;
-        height: 2px;
-        background-color: orange;
-        margin: 5px 0;
-    }
 }
-
-
-
-
