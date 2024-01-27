@@ -7,6 +7,8 @@
 body{
     background-color: #1e1d2b;
 }
+
+
 header{
     top: 0;
     position: fixed;
@@ -304,7 +306,9 @@ footer{
         justify-content: space-around;
         align-items: center;
         padding: 20px 0;
+        height: 40px;
     }
+
     
     .titulo {
         margin-bottom: 10px;
