@@ -237,6 +237,8 @@ footer{
 
 
 @media (max-width: 700px) {
+    
+
     .menu-items {
         display: none; 
         position: absolute;
@@ -288,7 +290,140 @@ footer{
         background: white;
         padding: 10px 0;
     }
+
+
+    /* AJUSTE */
+
     
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .titulo {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .botonMenu {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .menu-items {
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .menu-items {
+        display: flex;
+    }
+
+    .menu {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    /* Ajustes para los contenedores */
+    .contenedor1,
+    .contenedor2,
+    .contenedor3,
+    .contenedor4,
+    .contenedor5 {
+        margin-top: 100px; /* Espacio adicional entre secciones */
+    }
+
+    /* Ajustes para los títulos */
+    .titulo-cont1 {
+        font-size: 48px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    /* Ajustes para los párrafos */
+    .parrafo1 {
+        font-size: 24px;
+    }
+
+    .parrafo2 {
+        font-size: 16px;
+    }
+
+    .parrafo3 {
+        font-size: 36px;
+    }
+
+    .parrafo4 {
+        font-size: 16px;
+    }
+
+    .parrafo5 {
+        font-size: 16px;
+    }
+
+    .parrafo6 {
+        font-size: 36px;
+    }
+
+    .parrafo7 {
+        font-size: 36px;
+    }
+
+    /* Ajustes para los botones */
+    .color-boton {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Ajustes para la galería */
+    .galeria {
+        grid-template-columns: 100%;
+        gap: 10px;
+    }
+
+    .galeria-item1,
+    .galeria-item2 {
+        width: 100%;
+    }
+
+    /* Ajustes para el footer */
+    footer {
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    .cont-foo {
+        margin-bottom: 20px;
+    }
+
+    /* Ajustes para la barra de navegación del footer */
+    .border,
+    .border-foo {
+        display: none;
+    }
 }
 
 
