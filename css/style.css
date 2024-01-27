@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif; 
+}
+
+body{
+    background-color: #1e1d2b;
+}
+header{
+    top: 0;
+    position: fixed;
+    display: flex;
+    height: 110px;
+    width: 98%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: #1e1d2b;
+}
+
+.menu{
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+    font-size: 20px;
+}
+.menu:hover{
+    border: 1px solid #087f5b;
+}
+
+h2,h1{
+    margin-top: 0px;
+    color: #ff702a;
+}
+
+h3,h4{
+    color: #fff;
+}
+
+h4{
+    display: inline;
+    font-size: 20px;
+}
+h1{
+    font-size: 70px;
+}
+h3{
+    font-size: 50px; 
+}
+.titulo-cont1{
+    color: #ff702a;
+    font-size: 100px;
+}
+.parrafo1{
+    font-size: 40px;
+    color: #fff;
+}
+.parrafo2{
+    font-size: 20px;
+    color: #ff702a;
+}
+.parrafo3{
+    font-size: 45px;
+    color: #fff;
+}
+.parrafo4{
+    font-size: 20px;
+    color: #fff;
+}
+.parrafo5{
+    font-size: 20px;
+    color: #ff702a;
+    text-align: center;
+}
+.parrafo6{
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+}
+.parrafo7{
+    font-size: 45px;
+    color: black;
+    text-align: center;
+}
+
+    
+
+    
+
+.color-boton{
+    color: #fff;
+    font-size: 20px;
+    background-color: #ff702a;
+    width: fit-content; 
+    padding: 13px;
+}
+
+
+
+
+/* Contenedor 1 */
+.contenedor1{
+    display: grid;
+    margin-top: 200px;
+    height: 600px;
+    grid-template-columns: 50% 50%;
+    gap: 50px;
+}
+
+.grid-item1{
+    margin-left: 30%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.grid-item2{
+    display: grid;
+}
+
+
+/* Contenedor 2 */
+.contenedor2{
+    display: grid;
+    margin-top: 200px;
+    height: 822px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+/* Contenedor 3 */
+
+.contenedor3, .contenedor4{
+    display: grid;
+    margin-top: 200px;
+    height: 822px;
+    align-items: center;
+    justify-content: center;
+}
+.galeria, .galeria2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.galeria{
+    grid-template-columns: 25% 25% 25%;
+    gap: 20px;
+}
+.galeria-item1{
+    background-color: #FFEFE8;
+    height: 200px; 
+    padding: 30px; 
+}
+.galeria-item1, .galeria-item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* Contenedor 4 */
+.galeria2{
+    grid-template-columns: 30% 30% 30%;
+    
+}
+.galeria-item2{
+    height: 500px; 
+}
+
+/* Contenedor 5 */
+
+.contenedor5{
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    padding: 40px;
+}   
+
+.cont_aden{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fff;
+}
+
+
+/* Pie */
+.border{
+    border: none;
+    width: 100%;
+    height: 3px;
+    background-color: #ff702a;
+}
+.border-foo{
+    border: none;
+    margin: 0;
+    width: 40%;
+    height: 2px;
+    background-color: #ff702a;
+}
+.titulo-foo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 17% 17% 17% 17%;
+    justify-content: center;
+    height: 210px;
+    padding: 4px;
+}
+
+.cont-foo{
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-foo-us{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+/* responsive */
+
+
+@media (max-width: 700px) {
+    .menu-items {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #1e1d2b;
+        opacity: 0.8;
+    }
+    
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .menu-items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botonMenu{
+        margin: 0 auto;
+        display: block;
+        width: 40px;
+        height: 36px;
+        padding: 10px;
+        border-radius: 7px;
+        background: #666;
+        color: white;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .botonMenu span{
+        display: block;
+        width: 40px;
+        height: 4px;
+        background: white;
+        margin-top: 7px;
+    }
+
+    label{
+        cursor: pointer;
+    }
+
+    #menu-toggle{
+        display: none;
+    }
+
+    #trickMenu{
+        display: none;
+        text-align: center;
+        background: white;
+        padding: 10px 0;
+    }
+    
+}
+
+
+
+
